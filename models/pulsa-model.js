@@ -1,9 +1,10 @@
 const mongoose = require('mongoose')
 
 const DataPulsa = new mongoose.Schema({
-    Harga: {type: Number},
-    BesarPulsa : {type : Number},
-    Waktu: {type : Date}
+    NoTelpon: {type: String},
+    Nama : {type : String},
+    Operator : {type : String},
+    Nominal : {type : String}
 })
 
 

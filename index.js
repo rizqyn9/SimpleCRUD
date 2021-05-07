@@ -13,8 +13,6 @@ mongoose.connect(URIS,{useNewUrlParser: true, useUnifiedTopology:true, useFindAn
     .catch(err => console.log(err))
 
 const pulsaRouter = require('./router/pulsa-router')
-const authRouter = require('./router/auth-router')
-app.use('/auth', authRouter)
 app.use('/pulsa', pulsaRouter)
 
 

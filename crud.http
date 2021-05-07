@@ -7,8 +7,10 @@ POST  http://localhost:5000/pulsa/create
 Content-Type: application/json
 
 {
-    "Harga": 12000,
-    "BesarPulsa" : 12000
+    "NoTelpon": "0898566",
+    "Nama" : "Rizqy",
+    "Operator" : "three",
+    "Nominal" : "20000"
 }
 
 ###
@@ -22,27 +24,12 @@ PUT http://localhost:5000/pulsa/edit/ID
 Content-Type: application/json
 
 {
-    "Harga": 12000,
-    "BesarPulsa" : 12000
+    "NoTelpon": "0898566",
+    "Nama" : "Rizqy",
+    "Operator" : "three",
+    "Nominal" : "250000"
 }
-
 ###
-DELETE http://localhost:5000/pulsa/delete/60940135839ad427217d8258
+DELETE http://localhost:5000/pulsa/delete/ID
 
-###
-POST  http://localhost:5000/auth/register
-Content-Type: application/json
 
-{
-    "UserName": "Rizqy",
-    "Password" : "hahah"
-}
-
-###
-POST  http://localhost:5000/auth/login
-Content-Type: application/json
-
-{
-    "UserName": "Rizqy",
-    "Password" : "hahah"
-}
